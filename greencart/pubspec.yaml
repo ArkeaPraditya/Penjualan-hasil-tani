@@ -1,0 +1,28 @@
+name: greencart
+description: GreenCart - Dari Petani untuk Dapurmu. Aplikasi belanja pangan segar dengan penyimpanan lokal.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2          # state management (ChangeNotifier)
+  sqflite: ^2.3.3           # database SQLite lokal
+  path: ^1.9.0              # penyusunan path database
+  shared_preferences: ^2.2.3 # sesi lokal & pengaturan ringan
+  crypto: ^3.0.3            # SHA-256 untuk hash kata sandi demo
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  sqflite_common_ffi: ^2.3.3 # menjalankan SQLite di mesin host untuk pengujian
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/products/
